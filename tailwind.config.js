@@ -3,16 +3,17 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./**/*.html"],
   safelist: ["active"],
-  darkMode: "class",
   theme: {
     fontFamily: {
       header: ["Raleway", "sans-serif"],
       body: ["Open Sans", "sans-serif"],
     },
+
     screens: {
       xs: "375px",
       ...defaultTheme.screens,
     },
+
     colors: {
       transparent: "transparent",
       primary: "#5540af",
@@ -98,6 +99,5 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
-    require('flowbite/plugin'),
   ],
 };
